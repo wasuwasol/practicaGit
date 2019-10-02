@@ -15,4 +15,3 @@
 - git commit -m "mensaje del commit"
 - git status
 - git push --set-upstream origin nueva-rama
-
