@@ -11,6 +11,7 @@
 ## Crear una nueva rama de trabajo
 - git branch nueva-rama
 - git checkout nueva-rama
+- (atajo) git checkout -b nueva-rama
 
 
 ## Hacer tus cambios locales
@@ -20,6 +21,18 @@
 - git push --set-upstream origin nueva-rama
 
 
-## Configurar repo remoto
+## Configurar repo remoto (repositorio en github)
 - git remote -v
 - git remote add upstream url_del_repositorio_original
+
+
+## Sincronizar el Fork con repo local
+- git fetch upstream
+- git checkout master
+- git merge upstream/master
+
+
+## Mergear al master (local[nuestra computadora])
+- git checkout master
+- git merge nueva-rama
+- git push -u origin master
